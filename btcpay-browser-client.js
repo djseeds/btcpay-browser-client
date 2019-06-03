@@ -79,6 +79,9 @@ var BtcPayServerModal = (function () {
             .then(function (response) {
                 return waitForPayment(url, response.data.id, storeId);
             });
+        },
+        hide: function() {
+            window.btcpay.hideFrame();
         }
     }
 })()
